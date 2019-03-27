@@ -18,7 +18,7 @@ public class Main {
 		int result = 0;
 		while (add <= input2) {
 			result = result + add;
-			add = add + 1;
+			add++;
 		}
 		System.out.println("Output = "+result);
 	}

@@ -10,14 +10,15 @@ public class Main {
 		word = in.nextLine();
 		
 		int length = word.length();
-		int position = 0;
-		String letter = word.substring(0,position);
+		int end = 1;
+		int beg = 0;
 		
-		while (position < length) {
+		while (end <= length && beg <= length) {
+			String letter = word.substring(beg,end);
 			System.out.println(letter);
-			position = position + 1;
+			beg++;
+			end++;
 		}
 				
 		}
 	}
-
