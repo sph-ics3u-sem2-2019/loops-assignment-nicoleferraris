@@ -19,17 +19,11 @@ public class Main {
 		System.out.println("Print a string.");
 		String input = in.nextLine();
 		System.out.println("Input: "+input);
-		int length = input.length();
+		int length = input.length()-1;
 		
-		for (int i = 1; i <= length; i++) {
-				System.out.println(input);
-
+		for (int i = 0; i <= length; i++) {
+			String x = input.substring(0,i);
+			System.out.println(input.substring(i)+x);
 		}
-		
-		
-		
-
-
 	}
-
 }

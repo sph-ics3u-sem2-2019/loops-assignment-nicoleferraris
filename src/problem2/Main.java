@@ -13,10 +13,11 @@ public class Main {
 		input2 = in.nextInt();
 		System.out.println("Input = "+input1+","+input2);
 		int result = 0;	
+		
+		
 		for (int add = input1; add <= input2; add++) {
 			result = result + add;
 		}
-		
 		
 		System.out.println("Output = "+result);
 	}
