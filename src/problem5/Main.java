@@ -5,20 +5,19 @@ public class Main {
 	public static void main(String[] args) {
 		// Read the string and output in reverse case.
 		Scanner in=new Scanner(System.in);
-		String input = "";
 		
 		System.out.println("Type in a String.");
-		input = in.nextLine();
-		System.out.println(input);
+		String input = in.nextLine();
+		int length = input.length();
 		
-		
-		/*if (input.charAt(0)>='A' && input.charAt(0)<='Z') {
-			System.out.println(input.toLowerCase());
-		} else {
-			if (input.charAt(0)>='a' && input.charAt(0)<='z') {
-				System.out.println(input.toUpperCase());
+		for (int i = 0; i < length; i++) {
+			char x = input.charAt(i);
+			if (Character.isUpperCase(x)) {
+				x = Character.toLowerCase(x);
+			} else if (Character.isLowerCase(x)) {
+				x = Character.toUpperCase(x);
 			}
-		} */
-		
+			System.out.print(x);
+		}
 		}
 	}

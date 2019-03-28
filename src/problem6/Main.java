@@ -16,6 +16,19 @@ public class Main {
 		 * hZebart
 		 */
 		Scanner in=new Scanner(System.in);
+		System.out.println("Print a string.");
+		String input = in.nextLine();
+		System.out.println("Input: "+input);
+		int length = input.length();
+		
+		for (int i = 1; i <= length; i++) {
+				System.out.println(input);
+
+		}
+		
+		
+		
+
 
 	}
 
